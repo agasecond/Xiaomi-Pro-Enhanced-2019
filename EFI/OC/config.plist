@@ -72,14 +72,6 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>Enable trackpad interrupt mode, pair with VoodooI2C.kext and VoodooI2CHID.kext</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-XOSI.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
                     <string>USB power injection</string>
                     <key>Enabled</key>
                     <true/>
@@ -109,6 +101,14 @@
                     <true/>
                     <key>Path</key>
                     <string>SSDT-DDGPU.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>enable trackpad</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-TPD0.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -262,32 +262,6 @@
                     <data></data>
                     <key>Replace</key>
                     <data>IgAAOHkA</data>
-                    <key>ReplaceMask</key>
-                    <data></data>
-                    <key>Skip</key>
-                    <integer>0</integer>
-                    <key>TableLength</key>
-                    <integer>0</integer>
-                    <key>TableSignature</key>
-                    <data></data>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>OSI Xosi</string>
-                    <key>Count</key>
-                    <integer>0</integer>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Find</key>
-                    <data>X09TSQ==</data>
-                    <key>Limit</key>
-                    <integer>0</integer>
-                    <key>Mask</key>
-                    <data></data>
-                    <key>OemTableId</key>
-                    <data></data>
-                    <key>Replace</key>
-                    <data>WE9TSQ==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -1076,8 +1050,6 @@
                 <false/>
                 <key>PickerMode</key>
                 <string>External</string>
-                <key>PickerVariant</key>
-                <string>Auto</string>
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
